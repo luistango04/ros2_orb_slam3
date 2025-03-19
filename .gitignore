@@ -1,3 +1,32 @@
 README.md
 *.mp4
 .vscode/
+# Build artifacts and libraries
+*.so
+*.so.*
+*.a
+*.o
+
+# CMake-generated files
+CMakeCache.txt
+CMakeFiles/
+CTestConfiguration.ini
+CTestCustom.cmake
+CTestTestfile.cmake
+Makefile
+cmake_install.cmake
+
+# ROS2 and AMENT-related generated files
+AMENT_IGNORE
+ament_cmake_core/
+ament_cmake_environment_hooks/
+ament_cmake_export_dependencies/
+ament_cmake_export_include_directories/
+ament_cmake_index/
+ament_cmake_package_templates/
+ament_cmake_python/
+ament_cmake_uninstall_target/
+
+# Third-party build directories
+orb_slam3/Thirdparty/DBoW2/build/
+orb_slam3/Thirdparty/g2o/build/

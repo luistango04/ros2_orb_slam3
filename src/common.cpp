@@ -8,7 +8,7 @@ Date: 01/01/24
 REQUIREMENTS
 * Make sure to set path to your workspace in common.hpp file
 
-*/
+*/ 
 
 //* Includes
 #include "ros2_orb_slam3/common.hpp"
@@ -132,7 +132,7 @@ void MonocularMode::initializeVSLAM(std::string& configString){
     } 
     
     //* Build .yaml`s file path
-    
+    RCLCPP_INFO(this->get_logger(), "Path to Config String: %s", configString.c_str());
     settingsFilePath = settingsFilePath.append(configString);
     settingsFilePath = settingsFilePath.append(".yaml"); // Example ros2_ws/src/orb_slam3_ros2/orb_slam3/config/Monocular/TUM2.yaml
 

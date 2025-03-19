@@ -1,4 +1,7 @@
-set(g2o_SOURCE_DIR "${PROJECT_SOURCE_DIR}/orb_slam3/Thirdparty/g2o")
+add_compile_options(-Wno-error=array-bounds)
+set(g2o_SOURCE_DIR "${PROJECT_SOURCE_DIR}")
+find_package(Eigen3  REQUIRED) # Matched with Sophus
+include_directories(${EIGEN3_INCLUDE_DIRS}) # Include headers for eigen3
 
 SET(g2o_C_FLAGS)
 SET(g2o_CXX_FLAGS)

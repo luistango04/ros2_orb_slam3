@@ -22,7 +22,7 @@ find_package(sensor_msgs REQUIRED)
 # find_package(your_custom_msg_interface REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(OpenCV 4.2 REQUIRED)
-find_package(Eigen3 3.3.0 REQUIRED) # Matched with Sophus
+find_package(Eigen3  REQUIRED) # Matched with Sophus
 find_package(Pangolin REQUIRED)
 find_package(image_transport REQUIRED)
 
